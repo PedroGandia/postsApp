@@ -1,0 +1,40 @@
+buildscript {
+    ext.versions = [
+            'kotlin_version' : '1.5.10',
+            'nav_version'    : '2.3.0',
+            'dagger'         : '2.36',
+            'glide'          : '4.9.0',
+            'room_version'   : '2.3.0',
+            'gson'            : '2.8.5',
+            'retrofit'        : '2.3.0',
+            'okhttp'          : '3.14.7',
+            'browser'          : '1.4.0',
+            'rxandroid'       : '2.1.1',
+            'rxjava'          : '2.1.9',
+            'timber'         : '4.7.1',
+    ]
+
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:4.2.1'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:${versions.kotlin_version}"
+        classpath "androidx.navigation:navigation-safe-args-gradle-plugin:${versions.nav_version}"
+    }
+}
+
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

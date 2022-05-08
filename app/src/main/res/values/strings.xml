@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name" translatable="false">Posts App</string>
+    <string name="btn_ok" translatable="false">OK</string>
+
+    <string name="title_error_message">An error has occurred: \n%s</string>
+    <string name="title_users">Users</string>
+    <string name="title_search_user">Search user</string>
+    <string name="title_view_posts">View posts</string>
+    <string name="title_posts">Posts</string>
+    <string name="title_empty_list">List is empty</string>
+    <string name="title_sub_empty_list_post">No posts to show</string>
+    <string name="title_sub_empty_list_user">No users to show</string>
+</resources>

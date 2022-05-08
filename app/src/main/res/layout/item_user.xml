@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    android:paddingStart="10dp"
+    android:paddingEnd="10dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        app:cardCornerRadius="8dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_name_user"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:fontFamily="@font/montserrat_regular"
+                android:textColor="?colorPrimary"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/img_phone"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintEnd_toStartOf="@+id/txt_phone"
+                app:layout_constraintStart_toStartOf="@+id/txt_name_user"
+                app:layout_constraintTop_toBottomOf="@+id/txt_name_user"
+                app:srcCompat="@drawable/ic_phone" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_phone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_medium"
+                android:maxLines="1"
+                android:textColor="@color/colorTxt42"
+                android:textSize="12sp"
+                app:layout_constraintTop_toTopOf="@+id/img_phone"
+                app:layout_constraintStart_toEndOf="@+id/img_phone"
+                app:layout_constraintEnd_toEndOf="@id/txt_name_user"
+                />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/img_email"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintEnd_toStartOf="@+id/txt_email"
+                app:layout_constraintStart_toStartOf="@+id/txt_name_user"
+                app:layout_constraintTop_toBottomOf="@+id/img_phone"
+                app:srcCompat="@drawable/ic_email" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_email"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_medium"
+                android:maxLines="1"
+                android:textColor="@color/colorTxt42"
+                android:textSize="12sp"
+                app:layout_constraintTop_toTopOf="@+id/img_email"
+                app:layout_constraintStart_toEndOf="@+id/img_email"
+                app:layout_constraintEnd_toEndOf="@id/txt_name_user"
+                />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_view_posts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:maxLines="1"
+                android:text="@string/title_view_posts"
+                android:textAllCaps="true"
+                android:textColor="?colorPrimary"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/txt_name_user"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/img_email"
+                app:layout_constraintTop_toBottomOf="@+id/img_email" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

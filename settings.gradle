@@ -1,0 +1,2 @@
+rootProject.name='postsApp'
+include ':app'

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_error_message">Ha ocurrido un error: \n%s</string>
+    <string name="title_users">Usuarios</string>
+    <string name="title_search_user">Buscar usuario</string>
+    <string name="title_view_posts">Ver publicaciones</string>
+    <string name="title_posts">Publicaciones</string>
+    <string name="title_empty_list">La lista está vacía</string>
+    <string name="title_sub_empty_list_post">No hay publicaciones para mostrar</string>
+    <string name="title_sub_empty_list_user">No hay usuarios para mostrar</string>
+</resources>

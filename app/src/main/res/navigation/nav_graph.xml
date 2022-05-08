@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@+id/nav_users">
+
+    <fragment
+        android:id="@+id/nav_users"
+        android:name="com.postsApp.ui.users.UsersFragment"
+        android:label="@string/title_users"
+        tools:layout="@layout/fragment_users">
+        <action
+            android:id="@+id/act_users_to_posts"
+            app:destination="@id/nav_posts" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_posts"
+        android:name="com.postsApp.ui.posts.PostsFragment"
+        android:label="@string/title_posts"
+        tools:layout="@layout/fragment_posts">
+        <argument
+            android:name="userId"
+            android:defaultValue="-1L"
+            app:argType="long" />
+    </fragment>
+
+    <dialog
+        android:id="@+id/message_dialog_fragment"
+        android:name="com.postsApp.ui.dialog.MessageDialogFragment">
+        <argument
+            android:name="dialogTitle"
+            android:defaultValue="@null"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="dialogMessage"
+            app:argType="string" />
+        <argument
+            android:name="isRedirectable"
+            android:defaultValue="false"
+            app:argType="boolean" />
+        <argument
+            android:name="isCancelable"
+            android:defaultValue="true"
+            app:argType="boolean" />
+    </dialog>
+</navigation>
